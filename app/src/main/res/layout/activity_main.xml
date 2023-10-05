@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#8ecae6"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!--  Dice Image  -->
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/diceImage"
+        android:src="@drawable/die1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="ContentDescription" />
+
+                    <!--  Roll Button  -->
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="200dp"
+        android:layout_height="65dp"
+        android:id="@+id/btnRoll"
+        android:text="Roll Dice"
+        app:cornerRadius="15dp"
+        android:backgroundTint="#219ebc"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/diceImage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="50dp"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
